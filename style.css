@@ -1,0 +1,254 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+body{
+    font-size: 14px;
+    line-height: 1.6;
+
+}
+.toggle{
+display: none;
+cursor: pointer;
+}
+ul{
+    list-style: none;
+}
+
+.container {
+    max-width: 800px;
+    margin: auto;
+    padding: 0 30px;
+    
+
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+.btn{
+    display: inline-block;
+    background-color:black;
+    color: silver;
+    padding: 10px;
+    font-weight: bold;
+
+    
+}
+.btn:hover{
+    opacity: 0.8; /*تتحكم بالشفافية */
+}
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px;
+}
+
+.left{
+    display: flex;
+    align-items: center;
+    gap :30px;
+}
+
+.left ul {
+    display: flex;
+    list-style: none;
+    gap :20px;
+
+}
+.left a:hover{
+    border-bottom: 2px solid black;
+}
+
+.left a {
+    padding-bottom: 2px;
+
+}
+.right ul {
+    display: flex;
+    flex-direction: row;
+    gap:20px;
+    list-style: none;
+}
+
+.showcase {
+    height: 390px;
+    background-image: url(./assets/slide1.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    padding-bottom: 50px ;
+    gap:20px;
+
+}
+.showcase btn {
+
+    margin-top: 10px;
+
+}
+.home-card{
+  margin-top: 20px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr ;
+  gap:20px;
+  /*  display: flex;
+    gap:20px;*/
+}
+.home-card img{
+    width: 100%;
+}
+.card{
+    display: flex;
+    flex-direction: column;
+    gap:10px;
+}
+.card a {
+    color:#0067b8;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+.xbox{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    height: 350px;
+    background-image: url("./assets/xbox.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding-top: 50px;
+    padding-left: 20px;
+
+}
+.xbox p{
+    width: 400px;
+    margin-top: 20px;
+}
+.carbon {
+    color: white;
+    background-image: url("./assets/carbon.jpeg");
+    margin-top: 20px;
+    margin-bottom: 20px;
+    height: 350px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding-top: 50px;
+    padding-left: 20px;
+}
+.btn .dark {
+    color: black;
+    background-color: white;
+
+
+}
+.carbon p {
+    width: 600px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+.follow{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    margin-bottom: 20px;
+    margin: 0px 95px;
+}
+.links{
+    background-color:#f2f2f2;
+}
+.links-inner{
+    display: flex;
+    justify-content: space-between;
+    max-width: 1100px;
+    padding-top: 50px;
+    padding-bottom: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    color: #626261;
+    font-size: 13px;
+    line-height: 2.6;
+    
+}
+
+.footer{
+    max-width: 1100px;
+    margin: auto;
+    display: flex;
+    gap:40px;
+    font-size: 12px;
+    padding-top: 30px;
+    padding-bottom: 50px;
+    color: #616161;
+
+}
+.footer div {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.footer ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap:50px;
+}
+
+@media (max-width:600px){
+    .left ul{
+        display: none;
+    }
+    .toggle{
+        display: block;
+
+    }
+    .home-card{
+        grid-template-columns: 1fr 1fr ;    
+    }
+    .links-inner{
+        display: grid;
+        grid-template-columns: 1fr 1fr ;
+        gap:40p; 
+    }
+    .xbox p{
+        display: none;
+    }
+    
+
+
+    
+}
+@media (max-width:400px){
+    
+    .home-card{
+        grid-template-columns: 1fr ;    
+    }
+    .links-inner{
+        display: grid;
+        grid-template-columns: 1fr ;
+        gap:40p; 
+    }
+    .xbox p{
+        display: none;
+
+    }
+    .footer ul {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .footer {
+        display: flex;
+        flex-direction: column;
+    }
+    .xbox h2 {
+        margin-bottom: 20px;
+    }
+
+    
+}
