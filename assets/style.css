@@ -1,0 +1,222 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif ;
+}
+body{
+    font-size: 15px;
+}
+.countiner{
+    max-width: 1100px;
+    margin: auto;
+    padding: 0 35px ;
+}
+ul {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+    color: #262626;
+}
+.btn {
+    display: inline-block;
+    background-color: #262626;
+    color: white;
+    padding: 10px 20px;
+    font-weight: bold;
+}
+
+/* navbar */
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    height: 60px;
+    align-items: center;
+    font-size: 13px;
+}
+.navbar a {
+    padding-bottom: 2px;
+}
+.navbar a:hover {
+    border-bottom: 2px solid #262626;
+}
+
+.leftmenu{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+.leftmenu img{
+    width: 110px;
+}
+.leftmenu ul{
+    display: flex;
+    gap: 20px;
+}
+.rightmenu ul {
+    display: flex;
+    gap: 20px;
+}
+
+/*showcase*/
+.showcase{
+    height: 400px ;
+    background-image: url("slide1.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    padding-bottom: 50px;
+    gap: 20px;
+}
+.showcase .btn {
+    margin-top: 10px;
+}
+
+/* Home card Grid */
+/* .home-cards {
+    margin-top:20px;
+    display :grid;
+    grid-template-colums: 1fr 1fr 1fr 1fr ;
+    gap : 20px;
+}
+*/ 
+
+.home-cards{
+    margin-top: 20px;
+    display: flex;
+    gap: 20px;
+}
+.home-cards img {
+    width: 100%;
+}
+.card{
+    display: flex;
+    flex-direction:column ;
+    gap:10px;
+}
+.card a{
+    color: #0067b8;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+/*xboxx*/
+ .xbox{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    height: 350px;
+    background-image: url(xbox.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding-top: 50px;
+    padding-left: 30px;
+}
+.xbox p {
+    width: 400px;
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+.btn:hover{
+    opacity: 0.9;
+}
+
+/*carbon*/
+
+.carbon{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    height: 350px;
+    background-image: url(carbon.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding-top: 80px;
+    padding-left: 30px;
+    color: white;
+}
+.carbon p {
+    width: 600px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+.btn.dark{
+    color: #262626;
+    background-color: white;
+}
+.follow{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.links {
+    background-color: #f2f2f2;
+}
+
+ .links-inner{
+    max-width: 1100px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 50px;
+    padding-bottom: 20px;
+    color: #616161;
+    font-size: 13px;
+    line-height: 2.6;
+}
+
+/*footer*/
+.footer-inner {
+    max-width: 1100px;
+    margin: auto;
+    display: flex;
+    gap: 40px;
+    font-size: 12px;
+    padding-top: 30px;
+    padding-bottom: 50px;
+    color: #616161;
+}
+
+.footer-inner div {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.footer-inner ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+/* toggle */
+.toggle {
+    display: none;
+    cursor: pointer;
+}
+
+/*Responsive */
+
+@media (max-width: 700px){
+    .leftmenu ul {
+        display: none;
+    }
+    .toggle{
+        display: block;
+    }
+    .home-cards{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    .links-inner{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 40px ;
+    }
+}
