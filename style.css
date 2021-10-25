@@ -1,0 +1,221 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.contenr{
+    max-width: 1100px;
+    margin: auto;
+    padding:0 35px ;
+
+}
+.btn{
+    display: inline-block;
+    background-color: rgb(43, 38, 38);
+    color: white;
+    padding: 10px 20px;
+    font-weight: bold;
+}
+
+ul{
+    list-style: none;
+}
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    height: 60px;
+    align-items: center;
+}
+
+.navbar a{
+    padding-bottom: 2px;
+}
+.navbar a:hover{
+    padding-bottom: 2px solid #262622;
+}
+.left-menu{
+    display: flex;
+    align-items: center; 
+    gap: 20px;
+}
+
+.left-menu img{
+    width: 110px;
+
+}
+
+a{
+    text-decoration: none;
+    color: grey;
+}
+
+.left-menu ul{
+display: flex;
+gap: 20px;
+}
+
+.right-meuu{
+    display: flex;
+    align-items: center;
+}
+
+
+.right-meuu ul{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+/*showcase*/
+.showcase{
+    height: 350px;
+    background-image: url("https://i.ibb.co/zGSDGCL/slide1.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position:center;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    padding-bottom: 50px;
+    gap: 20px;
+    
+
+}
+
+.showcase .btn{
+margin: top 10px;
+}
+
+.home-cards{
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 20px;
+
+}
+.home-cards img{
+    width: 100%;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    gap:10px;
+}
+
+
+.card a{
+    color: #0067b8;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+
+.xbox{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    height: 350px;
+    background-image: url("https://i.ibb.co/tBJGPD9/xbox.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position:center ;
+    padding-top:50px ;
+    padding-left: 30px;
+}
+.xbox p{
+    width: 400px;
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+
+.carbon{
+  margin-top: 20px;
+  margin-bottom: 20px;
+  height: 350px;
+  background-image: url(" https://i.ibb.co/72cgtsz/carbon.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding-top: 80px;
+  padding-left: 30px;
+  color: white;
+}
+.btn.dark{
+    color: #262622;
+    background-color: white ;
+}
+/*///*/
+.folllow{
+    display: flex;
+    gap:20px;
+    align-items: center;
+    margin-bottom: 20px;
+}
+/*///*/
+.links{
+    background-color: #f2f2f2;
+}
+.links-unner{
+    max-width: 1100px;
+    margin:auto;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 50px;
+    padding-bottom: 20px;
+    color: #616161;
+    font-size: 13px;
+    line-height: 2.6;
+}
+
+.footer-inner{
+    max-width: 1100px;
+    margin:auto ;
+    display: flex;
+    gap:40px;
+    font-size: 12px;
+    padding-top: 30px;
+    padding-bottom: 50px;
+    color: #616161;;
+}
+.footer-inner div{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+}
+.footer-inner ul{
+    display: flex;
+
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.toggle{
+    display: none;
+    cursor:pointer;
+}
+
+
+/*display=grid
+grid-tamplet-column:1fr 1fr*/
+ 
+@media (max-width:700px){
+    .left-menu ul{
+        display: none;
+    }
+    .toggle{
+        display: block;
+    }
+    .home-cards{
+        display: grid;
+        grid-template-columns:1fr 1fr ;
+
+    }
+    .links-unner{
+        display: grid;
+        grid-template-columns:1fr 1fr ;
+        gap:40px;
+    }
+
+}
